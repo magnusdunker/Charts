@@ -1,0 +1,10 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "A simple bar chart with embedded data.",
+  "mark": "bar",
+  "data": { "name": "table" },
+  "encoding": {
+    "y": { "field": "category", "type": "ordinal" },
+    "x": { "field": "amount", "type": "quantitative" }
+  }
+}

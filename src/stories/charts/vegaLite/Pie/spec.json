@@ -1,0 +1,14 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "A basic pie chart example.",
+  "width": 200,
+  "height": 200,
+  "autosize": "none",
+  "data": { "name": "table" },
+  "mark": "arc",
+  "encoding": {
+    "theta": {"field": "field", "type": "quantitative"},
+    "color": {"field": "id", "type": "nominal"}
+  },
+  "view": {"stroke": null}
+}

@@ -16,3 +16,11 @@ In the project directory, you can run:
 
 * Vega [Vega](https://vega.github.io/vega/).
 * VegaReact [VegaReact](https://github.com/vega/react-vega).
+
+## Vega
+
+* Vega lite [Vega lite](https://vega.github.io/vega-lite/).
+* VegaReact [VegaReact lite](https://github.com/vega/react-vega/tree/v6.1.0/packages/react-vega-lite).
+
+
+

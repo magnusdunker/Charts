@@ -1,0 +1,44 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "A basic pie chart example.",
+  "width": 200,
+  "height": 200,
+  "autosize": "none",
+  "data": [
+    {
+      "name": "table",
+      "transform": [
+        {
+          "type": "pie",
+          "field": "field"
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": { "data": "table", "field": "id" },
+      "range": { "scheme": "category20" }
+    }
+  ],
+  "marks": [
+    {
+      "type": "arc",
+      "from": { "data": "table" },
+      "encode": {
+        "enter": {
+          "fill": { "scale": "color", "field": "id" },
+          "x": { "signal": "width / 2" },
+          "y": { "signal": "height / 2" }
+        },
+        "update": {
+          "startAngle": { "field": "startAngle" },
+          "endAngle": { "field": "endAngle" },
+          "outerRadius": { "signal": "width / 2" }
+        }
+      }
+    }
+  ]
+}
